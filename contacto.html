@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ICONO (2).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ICONO (2).ico" type="image/x-icon">
+    <title>AnalistCont</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Analist<span class="logo__bold">Cont</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Tu éxito financiero, nuestra pasión contable.</h2>
+            <p class="no-margin"></p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+    
+        <div class="contacto-bg"></div>
+    
+        <form class="formulario" action="https://formsubmit.co/lunarodriguezfelipealejandro@gmail.com" method="POST">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" name="nombre" required>
+            </div>
+    
+            <div class="campo">
+                <label class="campo__label" for="telefono">Telefono</label>
+                <input class="campo__field" type="tel" placeholder="Tu Telefono" name="telefono">
+            </div>
+    
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" name="email" required>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" name="mensaje" required></textarea>
+            </div>
+    
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario enviar-btn" >
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+        
+        <div class="info-contacto-horizontal">
+            <div class="info-seccion-horizontal">
+                <i class="fas fa-phone"><img src="img/receptor.png" alt=""></i>
+                <span class="info-titulo">Teléfono</span>
+                <span class="info-detalle">+123 456 7890</span>
+            </div>
+            <div class="info-seccion-horizontal">
+                <i class="fas fa-phone"><img src="img/email.png" alt=""></i>
+                <span class="info-titulo">Teléfono</span>
+                <span class="info-detalle">+098 765 4321</span>
+            </div>
+            <div class="info-seccion-horizontal">
+                <i class="fas fa-phone"><img src="img/whatsapp..png" alt=""></i>
+                <span class="info-titulo">Teléfono</span>
+                <span class="info-detalle">+555 666 7777</span>
+            </div>
+        </div>
+        
+        
+          
+        <div class="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=+573204567347&text=¿En%20qué%20podemos%20ayudarte%3F" target="_blank">
+              <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <span class="tooltip">¿En qué podemos ayudarte?</span>
+        </div>
+          
+    </main>
+    
+
+    
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Analist<span class="logo__bold">Cont</span></h1>
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="servicios.html" class="navegacion__enlace">Servicios</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="siguenos">
+                <p>Síguenos:</p>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61552977505394&mibextid=ZbWKwL" class="red-social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/analistcont?t=Oi-OOhQQo5uHP_hySArMpQ&s=09" class="red-social-icon"><img src="img/gorjeo.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/analistcont-finanzas-claras-525277298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="red-social-icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                    <!-- Agrega más redes sociales -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

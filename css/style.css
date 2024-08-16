@@ -1,0 +1,561 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #0c51a5;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primario);
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/** Header **/
+.webp .header {
+    background-image: url(../img/con.webp);
+}
+.no-webp .header {
+    background-image: url(../img/con.jpg);
+}
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto {
+   text-align: center;
+   color: var(--blanco);
+   margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    color: var(--blanco);
+    
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.entrada img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+/* Botón primario */
+.boton--primario {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 2px solid var(--negro);
+    border-radius: 4px; 
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer; 
+}
+
+.boton--primario:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+/* Botón secundario */
+.boton--secundario {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border: 2px solid var(--primario);
+    border-radius: 4px;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.boton--secundario:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-curso__info {
+    font-weight: normal;
+}
+.widget-curso__label,
+.widget-curso__info {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.siguenos {
+    display: flex; 
+    align-items: center; 
+    font-family: var(--fuenteParrafos);
+    color: var(--blanco);
+}
+
+.redes-sociales {
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales a {
+    margin-right: 10px; 
+}
+
+
+
+/** Sobre Nosotros **/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/** SERVICIOS **/
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type {
+   border: none;
+}
+
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.curso__info {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.contact-button a {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border: 2px solid var(--primario);
+    border-radius: 4px;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-top: 7rem;
+    text-transform: none; 
+}
+
+.contact-button a:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+
+/** Contacto **/
+.contacto-bg {
+    background-image: url(../img/CONTACTANOS.png);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+:root {
+    --blanco: #ffffff;
+    --gris: #dddddd;
+    --espaciado: 1rem;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: var(--espaciado);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--espaciado);
+}
+
+.campo__label {
+    flex: 0 0 100%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.campo__field--textarea {
+    height: 10rem;
+}
+
+.info-contacto-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.info-seccion-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.info-seccion-horizontal i {
+    font-size: 24px; /* Ajusta el tamaño del icono según sea necesario */
+    margin-bottom: 5px; /* Añade espacio entre el icono y el texto */
+}
+
+.info-seccion-horizontal .info-texto {
+    font-size: 14px; /* Tamaño de la información adicional más pequeña */
+}
+
+.info-seccion-horizontal:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .campo__label,
+    .campo__field {
+        flex: 1 0 100%;
+    }
+  
+    .campo {
+        flex-direction: column;
+    }
+
+    .campo__field--textarea {
+        height: auto;
+    }
+}
+
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+  }
+  
+  .whatsapp-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  }
+  
+  .whatsapp-button a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #128c7e, #25d366);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  /* Estilos para el ícono de WhatsApp */
+  .whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.2s ease-in-out;
+  }
+  
+  /* Agregar un efecto de transición suave para la animación */
+  .whatsapp-button a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .whatsapp-button a:hover::before {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  
+  /* Agregar una sombra en hover */
+  .whatsapp-button a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-button a:hover::after {
+    opacity: 0.8;
+  }
+  
+  /* Cambiar el color del ícono de WhatsApp en hover */
+  .whatsapp-button a:hover img {
+    filter: brightness(0.8);
+  }
+  
+  /* Estilos para el tooltip */
+  .tooltip {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 16px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Mostrar el tooltip al pasar el cursor */
+  .whatsapp-button:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #25d366;
+  }
+  
+  /** Redes sociales **/
+  @media (max-width: 768px) {
+    .siguenos {
+        justify-content: center;
+    }
+} 
+
+
+/*VALORES*/
+main h3 {
+    font-size: 36px;
+    color: #333; 
+}
+
+/* Estilos para las secciones de valores */
+.valor {
+    background: #fff; 
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.valor img {
+    max-width: 100px; 
+    margin: 0 auto 20px; 
+}
+
+.valor h4 {
+    font-size: 28px; 
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.valor p {
+    font-size: 18px; 
+    color: #666; 
+}
+
+
+
